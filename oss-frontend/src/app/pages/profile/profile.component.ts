@@ -31,7 +31,7 @@ export class ProfileComponent implements OnInit {
     private productService: ProductService,
     private route: ActivatedRoute,
     private router: Router
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.user = this.authService.getCurrentUser();
@@ -63,7 +63,7 @@ export class ProfileComponent implements OnInit {
     if (this.user) {
       // fetch all products, then filter by wishlist ids
       this.productService.getAllProducts().subscribe(products => {
-        this.wishlistProducts = products.filter(p => this.user!.wishlist.includes(p.id));
+        this.wishlistProducts = products.filter(p => (this.user?.wishlist || []).includes(p.id));
       }, err => {
         console.error('Error loading wishlist products', err);
         this.wishlistProducts = [];
