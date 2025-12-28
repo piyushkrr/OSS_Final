@@ -1,0 +1,55 @@
+server:
+  port: 9093
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/auth/**,/users/**
+
+        - id: product-catalog
+          uri: lb://product-catalog
+          predicates:
+            - Path=/api/products/**,/api/products/*/reviews/**,/api/products/image/**
+
+        - id: cart-service
+          uri: lb://cart-service
+          predicates:
+            - Path=/cart/**,/checkout/**
+
+        - id: order-management-service
+          uri: lb://order-management-service
+          predicates:
+            - Path=/api/orders/**
+
+        - id: payment-processing-service
+          uri: lb://payment-processing-service
+          predicates:
+            - Path=/api/payments/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+spring.cloud.gateway.globalcors:
+  cors-configurations:
+    '[/**]':
+      allowedOrigins: "http://localhost:4200"
+      allowedMethods:
+        - GET
+        - POST
+        - PUT
+        - DELETE
+        - OPTIONS
+      allowedHeaders: "*"
+      allowCredentials: true

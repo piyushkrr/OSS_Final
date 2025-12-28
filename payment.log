@@ -1,0 +1,104 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< com.tcs.boot:payment-processing-service >---------------
+[INFO] Building payment-processing-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.9:run (default-cli) > test-compile @ payment-processing-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ payment-processing-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ payment-processing-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ payment-processing-service ---
+[INFO] skip non existing resourceDirectory /home/labuser/Downloads/OSS_Final-main/oss-backend/payment-processing-service-master/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ payment-processing-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.5.9:run (default-cli) < test-compile @ payment-processing-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.9:run (default-cli) @ payment-processing-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.9)
+
+2025-12-28T06:44:04.718Z  INFO 46486 --- [payment-processing-service] [  restartedMain] .t.b.PaymentProcessingServiceApplication : Starting PaymentProcessingServiceApplication using Java 17.0.16 with PID 46486 (/home/labuser/Downloads/OSS_Final-main/oss-backend/payment-processing-service-master/target/classes started by labuser in /home/labuser/Downloads/OSS_Final-main/oss-backend/payment-processing-service-master)
+2025-12-28T06:44:04.818Z  INFO 46486 --- [payment-processing-service] [  restartedMain] .t.b.PaymentProcessingServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-28T06:44:06.529Z  INFO 46486 --- [payment-processing-service] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-28T06:44:06.536Z  INFO 46486 --- [payment-processing-service] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-28T06:44:24.568Z  INFO 46486 --- [payment-processing-service] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-28T06:44:28.290Z  INFO 46486 --- [payment-processing-service] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3465 ms. Found 1 JPA repository interface.
+2025-12-28T06:44:32.698Z  INFO 46486 --- [payment-processing-service] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6e6fad0b-6192-37e5-b63b-23c0eaf4c233
+2025-12-28T06:44:41.925Z  INFO 46486 --- [payment-processing-service] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8765 (http)
+2025-12-28T06:44:42.327Z  INFO 46486 --- [payment-processing-service] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-28T06:44:42.328Z  INFO 46486 --- [payment-processing-service] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.50]
+2025-12-28T06:44:43.230Z  INFO 46486 --- [payment-processing-service] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-28T06:44:43.252Z  INFO 46486 --- [payment-processing-service] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 36679 ms
+2025-12-28T06:44:46.334Z  INFO 46486 --- [payment-processing-service] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-28T06:44:47.068Z  INFO 46486 --- [payment-processing-service] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.39.Final
+2025-12-28T06:44:47.416Z  INFO 46486 --- [payment-processing-service] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-28T06:44:53.562Z  INFO 46486 --- [payment-processing-service] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-28T06:44:54.170Z  INFO 46486 --- [payment-processing-service] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-28T06:45:00.443Z  INFO 46486 --- [payment-processing-service] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b8af2b1
+2025-12-28T06:45:00.478Z  INFO 46486 --- [payment-processing-service] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-28T06:45:02.923Z  INFO 46486 --- [payment-processing-service] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-28T06:45:17.319Z  INFO 46486 --- [payment-processing-service] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists payment
+Hibernate: create table payment (amount float(53), status tinyint check (status between 0 and 3), id bigint not null auto_increment, payment_date datetime(6), order_id varchar(255), payment_id varchar(255), payment_method enum ('BNPL','CARD','WALLET'), primary key (id)) engine=InnoDB
+2025-12-28T06:45:18.146Z  INFO 46486 --- [payment-processing-service] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-28T06:45:20.940Z  WARN 46486 --- [payment-processing-service] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-28T06:45:24.494Z  INFO 46486 --- [payment-processing-service] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-28T06:45:24.786Z  INFO 46486 --- [payment-processing-service] [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-12-28T06:45:24.898Z  WARN 46486 --- [payment-processing-service] [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-28T06:45:25.003Z  INFO 46486 --- [payment-processing-service] [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-12-28T06:45:25.098Z  INFO 46486 --- [payment-processing-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-12-28T06:45:25.104Z  INFO 46486 --- [payment-processing-service] [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-28T06:45:25.119Z  INFO 46486 --- [payment-processing-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-12-28T06:45:25.119Z  INFO 46486 --- [payment-processing-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-12-28T06:45:25.120Z  INFO 46486 --- [payment-processing-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-12-28T06:45:25.120Z  INFO 46486 --- [payment-processing-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-12-28T06:45:25.120Z  INFO 46486 --- [payment-processing-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-12-28T06:45:25.120Z  INFO 46486 --- [payment-processing-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-12-28T06:45:25.120Z  INFO 46486 --- [payment-processing-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-12-28T06:45:29.018Z  INFO 46486 --- [payment-processing-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-12-28T06:45:29.025Z  INFO 46486 --- [payment-processing-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-12-28T06:45:29.029Z  INFO 46486 --- [payment-processing-service] [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-28T06:45:29.033Z  INFO 46486 --- [payment-processing-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1766904329032 with initial instances count: 0
+2025-12-28T06:45:29.060Z  INFO 46486 --- [payment-processing-service] [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-PROCESSING-SERVICE with eureka with status UP
+2025-12-28T06:45:29.068Z  INFO 46486 --- [payment-processing-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1766904329068, current=UP, previous=STARTING]
+2025-12-28T06:45:29.073Z  INFO 46486 --- [payment-processing-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-PROCESSING-SERVICE/ip-172-31-41-78.ap-south-1.compute.internal:payment-processing-service:8765: registering service...
+2025-12-28T06:45:29.164Z  INFO 46486 --- [payment-processing-service] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8765 (http) with context path '/'
+2025-12-28T06:45:29.165Z  INFO 46486 --- [payment-processing-service] [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8765
+2025-12-28T06:45:29.255Z  INFO 46486 --- [payment-processing-service] [  restartedMain] .t.b.PaymentProcessingServiceApplication : Started PaymentProcessingServiceApplication in 95.312 seconds (process running for 108.327)
+2025-12-28T06:45:29.873Z  INFO 46486 --- [payment-processing-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-PROCESSING-SERVICE/ip-172-31-41-78.ap-south-1.compute.internal:payment-processing-service:8765 - registration status: 204
+2025-12-28T06:45:59.026Z  INFO 46486 --- [payment-processing-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-12-28T06:45:59.026Z  INFO 46486 --- [payment-processing-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-12-28T06:45:59.026Z  INFO 46486 --- [payment-processing-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-12-28T06:45:59.026Z  INFO 46486 --- [payment-processing-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-12-28T06:45:59.026Z  INFO 46486 --- [payment-processing-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-12-28T06:45:59.027Z  INFO 46486 --- [payment-processing-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-12-28T06:45:59.027Z  INFO 46486 --- [payment-processing-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-12-28T06:45:59.044Z  INFO 46486 --- [payment-processing-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-12-28T06:50:25.123Z  INFO 46486 --- [payment-processing-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-28T06:55:25.124Z  INFO 46486 --- [payment-processing-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-28T07:00:25.135Z  INFO 46486 --- [payment-processing-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

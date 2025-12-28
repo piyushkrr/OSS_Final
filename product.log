@@ -1,0 +1,731 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.oss.productcatalog:product-catalog >---------------
+[INFO] Building product-catalog 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.9:run (default-cli) > test-compile @ product-catalog >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ product-catalog ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ product-catalog ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ product-catalog ---
+[INFO] skip non existing resourceDirectory /home/labuser/Downloads/OSS_Final-main/oss-backend/product-catalog/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ product-catalog ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.5.9:run (default-cli) < test-compile @ product-catalog <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.9:run (default-cli) @ product-catalog ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.9)
+
+2025-12-28T06:44:05.650Z  INFO 46595 --- [product-catalog] [           main] c.o.p.ProductCatalogApplication          : Starting ProductCatalogApplication using Java 17.0.16 with PID 46595 (/home/labuser/Downloads/OSS_Final-main/oss-backend/product-catalog/target/classes started by labuser in /home/labuser/Downloads/OSS_Final-main/oss-backend/product-catalog)
+2025-12-28T06:44:05.696Z  INFO 46595 --- [product-catalog] [           main] c.o.p.ProductCatalogApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-12-28T06:44:24.564Z  INFO 46595 --- [product-catalog] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-28T06:44:28.645Z  INFO 46595 --- [product-catalog] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3829 ms. Found 4 JPA repository interfaces.
+2025-12-28T06:44:33.871Z  INFO 46595 --- [product-catalog] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=903ddb11-61be-3c9d-9d9b-e622871b4e27
+2025-12-28T06:44:41.035Z  INFO 46595 --- [product-catalog] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-12-28T06:44:41.320Z  INFO 46595 --- [product-catalog] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-28T06:44:41.331Z  INFO 46595 --- [product-catalog] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.50]
+2025-12-28T06:44:42.709Z  INFO 46595 --- [product-catalog] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-28T06:44:42.762Z  INFO 46595 --- [product-catalog] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 35679 ms
+2025-12-28T06:44:45.868Z  INFO 46595 --- [product-catalog] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-28T06:44:46.652Z  INFO 46595 --- [product-catalog] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.39.Final
+2025-12-28T06:44:47.155Z  INFO 46595 --- [product-catalog] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-28T06:44:53.557Z  INFO 46595 --- [product-catalog] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-28T06:44:54.162Z  INFO 46595 --- [product-catalog] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-28T06:45:00.530Z  INFO 46595 --- [product-catalog] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d0e703a
+2025-12-28T06:45:00.569Z  INFO 46595 --- [product-catalog] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-28T06:45:02.948Z  INFO 46595 --- [product-catalog] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-28T06:45:18.503Z  INFO 46595 --- [product-catalog] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-28T06:45:18.993Z  INFO 46595 --- [product-catalog] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-28T06:45:22.824Z  WARN 46595 --- [product-catalog] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-28T06:45:25.754Z  INFO 46595 --- [product-catalog] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-12-28T06:45:25.973Z  WARN 46595 --- [product-catalog] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-28T06:45:26.166Z  INFO 46595 --- [product-catalog] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-12-28T06:45:26.247Z  INFO 46595 --- [product-catalog] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-12-28T06:45:26.253Z  INFO 46595 --- [product-catalog] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-28T06:45:26.308Z  INFO 46595 --- [product-catalog] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-12-28T06:45:26.308Z  INFO 46595 --- [product-catalog] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-12-28T06:45:26.308Z  INFO 46595 --- [product-catalog] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-12-28T06:45:26.308Z  INFO 46595 --- [product-catalog] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-12-28T06:45:26.308Z  INFO 46595 --- [product-catalog] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-12-28T06:45:26.309Z  INFO 46595 --- [product-catalog] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-12-28T06:45:26.312Z  INFO 46595 --- [product-catalog] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-12-28T06:45:29.298Z  INFO 46595 --- [product-catalog] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-12-28T06:45:29.300Z  INFO 46595 --- [product-catalog] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-12-28T06:45:29.305Z  INFO 46595 --- [product-catalog] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-28T06:45:29.308Z  INFO 46595 --- [product-catalog] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1766904329307 with initial instances count: 0
+2025-12-28T06:45:29.317Z  INFO 46595 --- [product-catalog] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PRODUCT-CATALOG with eureka with status UP
+2025-12-28T06:45:29.319Z  INFO 46595 --- [product-catalog] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1766904329319, current=UP, previous=STARTING]
+2025-12-28T06:45:29.322Z  INFO 46595 --- [product-catalog] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-CATALOG/ip-172-31-41-78.ap-south-1.compute.internal:product-catalog:8083: registering service...
+2025-12-28T06:45:29.411Z  INFO 46595 --- [product-catalog] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-12-28T06:45:29.414Z  INFO 46595 --- [product-catalog] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-12-28T06:45:29.464Z  INFO 46595 --- [product-catalog] [           main] c.o.p.ProductCatalogApplication          : Started ProductCatalogApplication in 95.253 seconds (process running for 106.02)
+2025-12-28T06:45:29.876Z  INFO 46595 --- [product-catalog] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-CATALOG/ip-172-31-41-78.ap-south-1.compute.internal:product-catalog:8083 - registration status: 204
+2025-12-28T06:45:59.301Z  INFO 46595 --- [product-catalog] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-12-28T06:45:59.301Z  INFO 46595 --- [product-catalog] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-12-28T06:45:59.301Z  INFO 46595 --- [product-catalog] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-12-28T06:45:59.301Z  INFO 46595 --- [product-catalog] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-12-28T06:45:59.301Z  INFO 46595 --- [product-catalog] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-12-28T06:45:59.301Z  INFO 46595 --- [product-catalog] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-12-28T06:45:59.301Z  INFO 46595 --- [product-catalog] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-12-28T06:45:59.326Z  INFO 46595 --- [product-catalog] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-12-28T06:46:00.215Z  INFO 46595 --- [product-catalog] [nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-28T06:46:00.215Z  INFO 46595 --- [product-catalog] [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-28T06:46:00.218Z  INFO 46595 --- [product-catalog] [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Hibernate: select p1_0.id,p1_0.active,p1_0.availability_status,p1_0.brand,p1_0.currency,p1_0.description,p1_0.name,p1_0.price,p1_0.sku,p1_0.stock from products p1_0
+Hibernate: select p1_0.id,p1_0.active,p1_0.availability_status,p1_0.brand,p1_0.currency,p1_0.description,p1_0.name,p1_0.price,p1_0.sku,p1_0.stock from products p1_0
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select p1_0.id,p1_0.active,p1_0.availability_status,p1_0.brand,p1_0.currency,p1_0.description,p1_0.name,p1_0.price,p1_0.sku,p1_0.stock from products p1_0
+Hibernate: select p1_0.id,p1_0.active,p1_0.availability_status,p1_0.brand,p1_0.currency,p1_0.description,p1_0.name,p1_0.price,p1_0.sku,p1_0.stock from products p1_0
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select p1_0.id,p1_0.active,p1_0.availability_status,p1_0.brand,p1_0.currency,p1_0.description,p1_0.name,p1_0.price,p1_0.sku,p1_0.stock from products p1_0
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select p1_0.id,p1_0.active,p1_0.availability_status,p1_0.brand,p1_0.currency,p1_0.description,p1_0.name,p1_0.price,p1_0.sku,p1_0.stock from products p1_0
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select p1_0.id,p1_0.active,p1_0.availability_status,p1_0.brand,p1_0.currency,p1_0.description,p1_0.name,p1_0.price,p1_0.sku,p1_0.stock from products p1_0
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select p1_0.id,p1_0.active,p1_0.availability_status,p1_0.brand,p1_0.currency,p1_0.description,p1_0.name,p1_0.price,p1_0.sku,p1_0.stock from products p1_0
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select p1_0.id,p1_0.active,p1_0.availability_status,p1_0.brand,p1_0.currency,p1_0.description,p1_0.name,p1_0.price,p1_0.sku,p1_0.stock from products p1_0
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select p1_0.id,p1_0.active,p1_0.availability_status,p1_0.brand,p1_0.currency,p1_0.description,p1_0.name,p1_0.price,p1_0.sku,p1_0.stock from products p1_0
+Hibernate: select p1_0.id,p1_0.active,p1_0.availability_status,p1_0.brand,p1_0.currency,p1_0.description,p1_0.name,p1_0.price,p1_0.sku,p1_0.stock from products p1_0
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+2025-12-28T06:50:26.314Z  INFO 46595 --- [product-catalog] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select p1_0.id,p1_0.active,p1_0.availability_status,p1_0.brand,p1_0.currency,p1_0.description,p1_0.name,p1_0.price,p1_0.sku,p1_0.stock from products p1_0
+Hibernate: select p1_0.id,p1_0.active,p1_0.availability_status,p1_0.brand,p1_0.currency,p1_0.description,p1_0.name,p1_0.price,p1_0.sku,p1_0.stock from products p1_0
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select p1_0.id,p1_0.active,p1_0.availability_status,p1_0.brand,p1_0.currency,p1_0.description,p1_0.name,p1_0.price,p1_0.sku,p1_0.stock from products p1_0
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select p1_0.id,p1_0.active,p1_0.availability_status,p1_0.brand,p1_0.currency,p1_0.description,p1_0.name,p1_0.price,p1_0.sku,p1_0.stock from products p1_0
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select p1_0.id,p1_0.active,p1_0.availability_status,p1_0.brand,p1_0.currency,p1_0.description,p1_0.name,p1_0.price,p1_0.sku,p1_0.stock from products p1_0
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select p1_0.id,p1_0.active,p1_0.availability_status,p1_0.brand,p1_0.currency,p1_0.description,p1_0.name,p1_0.price,p1_0.sku,p1_0.stock from products p1_0
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select c1_0.product_id,c1_1.id,c1_1.description,c1_1.name from product_categories c1_0 join categories c1_1 on c1_1.id=c1_0.category_id where c1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select i1_0.product_id,i1_0.id,i1_0.alt_text,i1_0.content_type,i1_0.image_data,i1_0.image_url,i1_0.sort_order from product_images i1_0 where i1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.helpful_count,r1_0.product_id,r1_0.rating,r1_0.title,r1_0.user_avatar,r1_0.user_id,r1_0.user_name,r1_0.verified_purchase from reviews r1_0 left join products p1_0 on p1_0.id=r1_0.product_id where p1_0.id=? order by r1_0.created_at desc
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+Hibernate: select s1_0.product_id,s1_0.spec_key,s1_0.spec_value from product_specs s1_0 where s1_0.product_id=?
+2025-12-28T06:55:26.314Z  INFO 46595 --- [product-catalog] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-28T07:00:26.315Z  INFO 46595 --- [product-catalog] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
